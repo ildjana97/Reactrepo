@@ -1,0 +1,16 @@
+.header{
+text-align: left;
+}
+
+.first-header{
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: bold;
+  color: black;
+}
+
+.second-header{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}

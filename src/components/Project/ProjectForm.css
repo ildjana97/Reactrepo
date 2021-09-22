@@ -1,0 +1,62 @@
+.project{
+    border-radius: 12px;
+    box-shadow: 0 1px 8px green;
+}
+
+
+form {
+    padding: 10px;
+    border-radius: 12px;
+    border: 3px solid green;
+}
+
+.new-project__meassure{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+
+.new-project__values{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.new-project__value{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.new-project_value input{
+    width: 60px;
+    height: 40px;
+}
+
+.new-project__betrag{
+display: flex;
+justify-content: space-between;
+}
+
+.new-project-title{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 30px;
+
+}
+
+.new-project__value label, .meassure-cash{
+    color: green;
+}
+.meassure-value__value1{
+    color:red;
+    display: inline;
+}
+
+.meassure-value__value2{
+    display: inline;
+    color: black!important;
+}
