@@ -36,12 +36,12 @@ const ProjectForm = () => {
         <div className="new-project__values">
             <div className="new-project__value">
                 <label>%Fubadruck</label>
-                <input type='number'  min="0%" step="10%"  max="100%"/>
+                <input type='number'  min="0%" step="10%"  max="100%" className="percentage"/>
             </div>
 
             <div className="new-project__value">
                 <label>Anzahl Jahre </label>
-                <input type='number'  min="1" step="1"  />
+                <input type='number'  min="1" step="1"  className="years"/>
             </div>
         </div>
 
