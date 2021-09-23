@@ -3,6 +3,7 @@ import './App.css';
 import React from 'react';
 import ProjectForm from './components/Project/ProjectForm';
 import HeaderTitle from './components/Header/Title';
+import Buttons from './components/Buttons/Buttons';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
       <HeaderTitle></HeaderTitle>
       <ProjectForm></ProjectForm>
+      <Buttons></Buttons>
     </div>
 
 
