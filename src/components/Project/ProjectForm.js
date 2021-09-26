@@ -2,41 +2,42 @@ import React, { useState } from 'react';
 import './ProjectForm.css';
 import Card from '../UI/Card';
 
-class ProjectForm extends React.Component{
-    constructor(props) {
-        super(props);
-        this.state = { 
-          percentage: 100,
-          years: 1,
-          result: 0.013* 7.2* 1000 + 0.015*1.140
-        };
-        this._changePercentage = this._changePercentage.bind(this);
-        this._changeYears = this._changeYears.bind(this);
-      }
+class ProjectForm extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = { 
+      percentage: 100,
+      years: 1,
+      result: 0.013* 7.2* 1000 + 0.015*1.140
+    };
+    this._changePercentage = this._changePercentage.bind(this);
+    this._changeYears = this._changeYears.bind(this);
+  }
 
       
-      _changePercentage(e) {
-          const totalAmount = 0.013* 7.2* 1000 + 0.015*1.140
-        if (e.target.validity.valid) {
-          var newPercentage = e.target.value
-          this.setState({
-              percentage: newPercentage,
-              result: newPercentage/100 * totalAmount * this.state.years
-            }); 
-        }
-      }
-      
-        _changeYears(e) {
-            const totalAmount = 0.013* 7.2* 1000 + 0.015*1.140
-        if (e.target.validity.valid) {
-          var newYears = e.target.value
-          this.setState({
-              years: newYears,
-              result: totalAmount * newYears * this.state.percentage/100
-            }); 
-        }
-      }
-    
+  _changePercentage(e) {
+    const totalAmount = 0.013* 7.2* 1000 + 0.015*1.140
+    if (e.target.validity.valid) {
+      var newPercentage = e.target.value
+      this.setState({
+          percentage: newPercentage,
+          result: newPercentage/100 * totalAmount * this.state.years
+        }); 
+    }
+  }
+  
+  _changeYears(e) {
+      const totalAmount = 0.013* 7.2* 1000 + 0.015*1.140
+  if (e.target.validity.valid) {
+    var newYears = e.target.value
+    this.setState({
+        years: newYears,
+        result: totalAmount * newYears * this.state.percentage/100
+      }); 
+  }
+}
+
       
   render () {
   return (
