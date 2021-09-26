@@ -3,16 +3,16 @@ import './ProjectForm.css';
 import Card from '../UI/Card';
 
 const ProjectForm = () => {
-/*
+
     const AddNumbers = (props) => {
-        [const enteredPercentage, setEnteredPercentage]= useState('');
-        [const enteredYears, setEnteredYears] = useState('');
-    }
+        const [enteredPercentage, setEnteredPercentage] = useState('');
+        const [enteredYears, setEnteredYears] = useState('');
+    };
     
 
     const percentageChangeHandler = (event) =>{
-    setEnteredPercentage(event.target.value);
-    }
+        setEnteredPercentage(event.target.value);
+    };
 
     const yearsChangeHandler = (event) =>{
         setEnteredYears(event.target.value);
@@ -20,28 +20,30 @@ const ProjectForm = () => {
     
 
 
-    const addNumbersHandler = (event) =>
-    event.preventDefault();
-    if (enteredPercentage < 0){
-        return(Value must be 0 or greater than 0);
-    } 
-    console.log( enteredPercentage, enteredYears);
-    setEnteredPercentage('');
-    setEnteredYears('');
+    const addNumbersHandler = (event) => {
+        event.preventDefault();
+        if (enteredPercentage < 0){
+            return(Value must be 0 or greater than 0);
+        }
+        console.log( enteredPercentage, enteredYears);
+        setEnteredPercentage('');
+        setEnteredYears('');
+    };
 
-*/
   return <form > 
       <Card className="project">
         <div className="new-project-title"> Dein CO2-Ausgleich</div>
         <div className="new-project__values">
             <div className="new-project__value">
                 <label>%Fubadruck</label>
-                <input type='number'  min="0%" step="10%"  max="100%" className="percentage"/>
+                <input type='number'  min="0%" step="10%"  max="100%" className="percentage"
+                value={ } onChange={}/>
             </div>
 
             <div className="new-project__value">
                 <label>Anzahl Jahre </label>
-                <input type='number'  min="1" step="1"  className="years"/>
+                <input type='number'  min="1" step="1"  className="years"
+                value={ } onChange={}/>
             </div>
         </div>
 
@@ -71,7 +73,7 @@ const ProjectForm = () => {
 
             <div className="new-project__betrag">
             <div className="meassure-name">Betrag</div>
-            <div className="meassure-cash">162,00€</div>
+            <div className="meassure-cash">{}</div>
             
         </div>
     </Card>
