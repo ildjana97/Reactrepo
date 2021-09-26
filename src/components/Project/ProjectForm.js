@@ -28,16 +28,15 @@ class ProjectForm extends React.Component {
   }
   
   _changeYears(e) {
-      const totalAmount = 0.013* 7.2* 1000 + 0.015*1.140
-  if (e.target.validity.valid) {
+    const totalAmount = 0.013* 7.2* 1000 + 0.015*1.140
+    if (e.target.validity.valid) {
     var newYears = e.target.value
     this.setState({
         years: newYears,
         result: totalAmount * newYears * this.state.percentage/100
       }); 
+    } 
   }
-}
-
       
   render () {
   return (
@@ -84,13 +83,13 @@ class ProjectForm extends React.Component {
             <div className="new-project__betrag">
             <div className="meassure-name">Betrag</div>
            <div className="meassure-cash"> {this.state.result}€</div> 
-           <div className="meassure-cash"> {}€</div> 
             
         </div>
     </Card>
 
   </form>
-  
-};
+  ); 
+  }
+}
 
 export default ProjectForm;
