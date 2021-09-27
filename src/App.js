@@ -1,10 +1,9 @@
-
-import './App.css';
-import React from 'react';
-import ProjectForm from './components/Project/ProjectForm';
-import HeaderTitle from './components/Header/Title';
-import Buttons from './components/Buttons/Buttons';
-
+import "./App.css";
+import React from "react";
+import { Route } from "react-router-dom";
+import ProjectForm from "./components/Project/ProjectForm";
+import HeaderTitle from "./components/Header/Title";
+import Buttons from "./components/Buttons/Buttons";
 
 function App() {
   return (
@@ -12,10 +11,12 @@ function App() {
       <HeaderTitle></HeaderTitle>
       <ProjectForm></ProjectForm>
       <Buttons></Buttons>
+      <Route path="expenses">
+        <ModalExpense />
+      </Route>
     </div>
 
-
-  /*  <div className="App">
+    /*  <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
