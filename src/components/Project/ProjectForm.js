@@ -55,7 +55,6 @@ const ProjectForm = () => {
             <div className="meassure">
               <div className="meassure-value">
                 <div className="meassure-value__value1">7.2t CO2💨</div>
-                <img src="" className="logo" alt="logo" />
               </div>
             </div>
           </div>
@@ -67,7 +66,6 @@ const ProjectForm = () => {
             <div className="meassure">
               <div className="meassure-value">
                 <div className="meassure-value__value2">1.140l💧</div>
-                <img src="" className="logo" alt="logo" />
               </div>
             </div>
           </div>

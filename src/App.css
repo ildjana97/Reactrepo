@@ -5,6 +5,24 @@
   margin-right: auto;
 }
 
+@media (max-width: 768px) {
+  .App {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 540px) {
+  .App {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    max-width: 280px;
+  }
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
